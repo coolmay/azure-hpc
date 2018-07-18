@@ -521,7 +521,7 @@ install_nodeagent()
     tar -xf hpcnodemanager.tar
     curl -o NodeAgent.tar http://evanc.blob.core.windows.net/linuxnm/NodeAgentPublish.tar
     tar -xf NodeAgent.tar
-    [ -f "/opt/appsettings.json" ] && cp /opt/appsettings.json /opt/NodeAgent/
+    [ -f "/opt/appsettings.json" ] && cp /opt/appsettings.json /opt/NodeAgentPublish/
     cd /opt/hpcnodemanager
     curl -o hpcagent https://suzhuhpcshare.blob.core.windows.net/testscripts/hpcagent
     chmod +xxx hpcagent
